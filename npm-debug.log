@@ -2,13 +2,13 @@
 1 verbose cli [ '/usr/local/Cellar/node/7.0.0/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'test' ]
+1 verbose cli   'dev' ]
 2 info using npm@3.10.8
 3 info using node@v7.0.0
 4 verbose stack Error: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/package.json'
 5 verbose cwd /Applications/MAMP/htdocs/eurl-app.github.io
 6 error Darwin 13.4.0
-7 error argv "/usr/local/Cellar/node/7.0.0/bin/node" "/usr/local/bin/npm" "run" "test"
+7 error argv "/usr/local/Cellar/node/7.0.0/bin/node" "/usr/local/bin/npm" "run" "dev"
 8 error node v7.0.0
 9 error npm  v3.10.8
 10 error path /Applications/MAMP/htdocs/package.json
