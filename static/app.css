@@ -1,7 +1,8 @@
-/* largeur maximale du site */
+/* largeur maximale du site
 #app .row {
-
+  max-width: 70rem;
 }
+*/
 
 #app,h1, h2, h3, h4, h5, h6 {
   font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
@@ -15,14 +16,19 @@ header {
   margin-top:1rem;
 }
 
+header .small {
+  text-transform: lowercase;
+}
+
 #site-title {
-  font-size:1.7rem;
+  font-size:1.5rem;
   text-transform:uppercase;
 }
 
 #site-subtitle {
-  font-size:1.2rem;
+  font-size:1rem;
   margin-bottom:0.5rem;
+  text-transform:uppercase;
 }
 
 .app-version {
@@ -40,12 +46,12 @@ footer {
 h1 {
   font-size:1.9rem;
   text-align:center;
-  text-transform:uppercase
+  text-transform:uppercase;
+  margin-bottom:2rem;
 }
 
 h2 {
   font-size:1.3rem;
-  text-align:center;
   text-transform:uppercase
 }
 
@@ -117,7 +123,6 @@ h3 {
 
 .total {
   background:rgb(240,240,240);
-  border:solid border 2px;
   font-size:1.5rem;
   text-transform:uppercase;
 }
@@ -125,6 +130,17 @@ h3 {
 table {
   border-collapse:collapse;
   border: solid black 1px;
+}
+
+.simulator-form .submit-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  border-radius:5px;
+}
+
+.simulator-form .label {
+  text-transform:uppercase;
 }
 
 .showDetails {
@@ -152,4 +168,23 @@ table tr:nth-of-type(even) {
 .simulateur-charts canvas{
   height:200px !important;
   width:200px !important;
+}
+
+/**
+ YINEO-TOOLTIP
+ */
+.simulator-form .yineo-tooltip {
+  float:right;
+  top:-3px;
+}
+
+/**
+ TRANSITIONS
+ */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
 }
